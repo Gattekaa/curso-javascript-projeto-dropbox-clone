@@ -3191,12 +3191,24 @@ clipping with .c-snackbar border. */
 .list-unstyled li {
     display: inline-block;
     margin: 2px;
+    max-width: 160px;
+    max-height: 160px;
+
+
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
+}
+
+.name{
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 #btn-send-file {
     margin-top: 40px;
